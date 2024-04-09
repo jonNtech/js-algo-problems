@@ -130,4 +130,17 @@ function isAnagram(str1, str2) {
   }
   return true;
 }
+
+function cleanStr(str) {
+  return str.toLowerCase().replace(/[\w]/g, "").split("").sort().join("");
+}
+function isAnagrams2(str1, str2) {
+  return cleanStr(str1) === cleanStr(str2);
+}
 console.log(isAnagram("Rail Safety!", "fairy tales"));
+console.log(isAnagram2("Rail Safety!", "fairy tales"));
+
+//count vowels
+function countVowels(str) {
+  //
+}
